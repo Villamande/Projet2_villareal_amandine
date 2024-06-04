@@ -18,17 +18,28 @@
     <div class="main-container">
         <header>
             <div class="logo-header">
-                <img src="./images/logo/booki.png" alt="logo" class="img-logogit statu">
+                <img src="./images/logo/booki.png" alt="logo" class="img-logo">
             </div>
             <nav>
                 <ul>
-                    <li><a href="#hébergements" class="hebergements-link">Hébergements</a></li>
-                    <li><a href="#activités" class="activites-link">Activités</a></li>
+                    <li><a href="#hebergements" class="hebergements-link">Hébergements</a></li>
+                    <li><a href="#activites" class="activites-link">Activités</a></li>
                 </ul>  
             </nav>
         </header>
+        
         <main>
-            <div class="hebergements-and-populaires">
+            <section class="presentation">
+                <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
+                <p>En plein centre-ville ou en pleine nature</p>
+                <form method="get" action="">
+                    <p>
+                        <label for="city">Rechercher</label>
+                        <input type="text" name="city" id="city" placeholder="Marseille, France" size="30" maxlength="20">
+                    </p>
+                </form>
+            </section>
+            <div class="hebergements-and-populaires" id="hebergements">
                 <section class="hebergements">
 
                 </section>
@@ -98,6 +109,9 @@
                     </div>
                 </section>
             </div>
+            <section id="activites">
+                <h2>Activités</h2>
+            </section>
         </main>
         <footer></footer>
     </div>
