@@ -1,2 +1,1 @@
-# projet2_villareal_amandine
-Projet 2
+# booki-starter-pack
