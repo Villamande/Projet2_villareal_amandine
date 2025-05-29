@@ -603,5 +603,32 @@ footer li {
 
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
-    /* ... */
+    
+header {
+    flex-direction: column;
+}
+
+.logo-header {
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+}
+
+nav {
+    width : 100%;
+}
+
+nav a {
+    display: block;
+    padding: 0 0 15px 0;
+    border-top: 1px transparent solid;
+    border-bottom: 1px transparent solid;
+}
+nav a:hover {
+    color: #0065FC;
+    border-color: #0065FC;
+    border-top: 1px transparent solid;
+}
+
+/* ... */
 }
