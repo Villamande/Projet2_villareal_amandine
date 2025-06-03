@@ -107,7 +107,6 @@ header {
 }
 
 nav {
-    width : 15.25rem;
     padding: 0px 50px;
 }
 
@@ -131,6 +130,10 @@ nav a {
 nav a:hover {
     color: #0065FC;
     border-color: #0065FC;
+}
+
+.hebergements-link {
+    margin-right: 68px;
 }
 
 
@@ -215,6 +218,18 @@ label {
 .filter-bar {
     display: flex;
     margin-bottom: 35px;
+}
+
+.filters {
+    display: flex;
+}
+
+.filters-first-line {
+    display: flex;
+}
+
+.filters-second-line {
+    display: flex;
 }
 
 .filter-bar h2 {
@@ -566,6 +581,8 @@ footer li {
 /* Le code ci-dessous correspond à la version responsive uniquement */
 
 /****** Media queries ***********/
+
+
 /* Medium devices (tablets, less/equal than 1024px) */
 @media (max-width: 1024px) {
   
@@ -573,14 +590,14 @@ footer li {
         flex-direction: column;
     }
 
-    .hebergements {
+    /*.hebergements {
         width: 100%;
     }
 
     .populaires {
         width: 100%;
         margin-top: 50px;
-    }
+    }*/
 
     .populaires-cards {
         display: flex;
@@ -601,9 +618,14 @@ footer li {
     }
 }
 
+
+
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
-    
+
+
+/***Header***/
+
 header {
     flex-direction: column;
 }
@@ -615,19 +637,116 @@ header {
 }
 
 nav {
-    width : 100%;
+    padding: 0;
 }
 
 nav a {
-    display: block;
     padding: 0 0 15px 0;
     border-top: 1px transparent solid;
-    border-bottom: 1px transparent solid;
+    border-bottom: 2px transparent solid;
 }
+
 nav a:hover {
     color: #0065FC;
     border-color: #0065FC;
-    border-top: 1px transparent solid;
+    border-top: 2px transparent solid;
+}
+
+nav li {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+
+.hebergements-link {
+  margin-right: 0;
+}
+
+/***Main***/
+
+main {
+    padding: 0;
+}
+    
+/***Presentation***/
+
+.presentation {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.headline {
+  margin-bottom: 35px;
+  width: 20rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.filter-bar {
+  flex-direction: column;
+}
+
+.filter {
+    width: 7.8rem;
+}
+
+/***marseille-and-populaires ***/
+
+.marseille-and-populaires {
+    flex-direction: column;
+}
+
+.marseille {
+    width: 100%;
+    margin-right: 0;
+}
+
+.first-line {
+    flex-direction: column;
+}
+
+.second-line {
+    flex-direction: column;
+}
+
+.populaires {
+  width: 100%;
+}
+
+.populaires-cards {
+    flex-direction: column;
+   }
+
+.activities-cards {
+    flex-direction: column;
+}
+
+ .footers-text {
+    margin: 0;
+  }
+
+.footers-text {
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+}
+
+.footers-line {
+  height: 0;
+  }
+
+.filters {
+    display: flex;
+    flex-direction: column;
+}
+
+.filters-first-line {
+    display: flex;
+}
+
+.filters-second-line {
+    display: flex;
 }
 
 /* ... */
