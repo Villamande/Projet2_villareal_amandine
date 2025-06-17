@@ -194,7 +194,7 @@ form img {
     color: black;
 }
 
-.loupe {
+.fa-magnifying-glass {
     display: none;
 }
 
@@ -240,10 +240,11 @@ label {
 }
 
 .filter {
+    width: 7.81rem;
     display: flex;
     align-items: center;
-    padding: 10px 19px; 
-    margin: 0 0 0 15px;   
+    padding: 10px 19px;   
+    margin-left: 15px;
     border: 2px solid #D9D9D9;
     border-radius: 25px;
 }
@@ -258,7 +259,7 @@ label {
 
 .filter-bar p {
     margin: 0;
-    font-size: 1.06rem;
+    font-size: 1rem;
     font-weight: 700; 
 }
 
@@ -617,6 +618,11 @@ footer li {
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
 
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
 /***Header***/
 
@@ -670,23 +676,38 @@ main {
 /***Presentation***/
 
 .presentation {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+    width: 20.93rem;
+    margin: 0 20px 0 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .headline {
-  margin-bottom: 35px;
-  width: 20rem;
-  display: flex;
-  flex-direction: column;
+    margin-bottom: 35px;
+    width: 20rem;
+    display: flex;
+    flex-direction: column;
+}
+
+form {
+    width: 20.93rem;
+}
+
+fieldset {
+    border: 1px solid #F2F2F2; 
+    border-radius: 15px;
+}
+
+.city {
+    border: 1px solid white;
 }
 
 label {
     display: none;
 }
 
-.loupe {
+.fa-magnifying-glass {
     display: block;
     color: white;
     padding: 15px 16px;;
@@ -701,46 +722,117 @@ label {
 }
 
 .filters {
-    width: 24rem;
+    width: 21.4rem;
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-around;
 }
 
 .filter {
     margin-top: 20px;
+    margin-left: 0;
 }
+
+.economic{
+    margin-right: 10px;
+} 
+
+.romantic {
+    margin-right: 10px;
+} 
 
 /***marseille-and-populaires ***/
 
 .marseille-and-populaires {
-    flex-direction: column;
+    flex-direction: column-reverse;
 }
 
 .marseille {
     width: 100%;
     margin-right: 0;
+    background-color: white;
+}
+
+.marseille-cards {
+    flex-direction: column;
+}
+
+.marseille-card {
+    width: 20.93rem;
+    height: 12.95rem;
+}
+
+.marseille-card img {
+    width: 20.81rem;
 }
 
 .populaires {
-  width: 100%;
+    width: 100%;
+    border-radius: 0;
+    padding: 30px 20px;
+}
+
+.populaires-title {
+    width: 20.93rem;
+}
+
+.populaires h2 {
+    font-size: 1.37rem;
 }
 
 .populaires-cards {
     flex-direction: column;
-   }
+}
+
+.populaires-cards .card {
+   margin-top: 0;
+}
+
+.populaires-cards a {
+    width: 20.93rem;
+    padding-top: 15px;
+}
+
+.activities {
+    margin: 0;
+}
 
 .activities-cards {
     flex-direction: column;
 }
 
- .footers-text {
-    margin: 0;
-  }
+.activities-card {
+    width: 19.68rem;
+    height: 12.5rem;
+}
+
+.activities img {
+    width: 19.68rem;
+    height: 8.813rem;
+}
+
+.la-garde {
+    margin-top: 15px;
+}
+
+.calanques{
+    margin-top: 15px;
+}
+
+.pomegues {
+    margin-top: 15px;
+}
 
 .footers-text {
+    margin: 0;
+    align-items: center;
     flex-direction: column;
     width: 100%;
     height: 100%;
+}
+
+.footer-column {
+    align-items: center;
 }
 
 .footers-line {
