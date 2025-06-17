@@ -676,7 +676,7 @@ main {
 /***Presentation***/
 
 .presentation {
-    width: 20.93rem;
+    width: 100%;
     margin: 0 20px 0 20px;
     display: flex;
     flex-direction: column;
@@ -745,6 +745,7 @@ label {
 
 .marseille-and-populaires {
     flex-direction: column-reverse;
+    width: 100%;
 }
 
 .marseille {
@@ -758,12 +759,15 @@ label {
 }
 
 .marseille-card {
-    width: 20.93rem;
-    height: 12.95rem;
+    width: 75%;
+}
+
+.midlle-marseille-card {
+    margin: 0;
 }
 
 .marseille-card img {
-    width: 20.81rem;
+    width: 100%;
 }
 
 .populaires {
@@ -773,7 +777,7 @@ label {
 }
 
 .populaires-title {
-    width: 20.93rem;
+    width: 75%;
 }
 
 .populaires h2 {
@@ -789,7 +793,7 @@ label {
 }
 
 .populaires-cards a {
-    width: 20.93rem;
+    width: 75%;
     padding-top: 15px;
 }
 
