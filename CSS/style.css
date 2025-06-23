@@ -387,7 +387,7 @@ article h3 {
     filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
 }
 
-.midlle-marseille-card {
+.middle-marseille-card {
     margin: 0 30px;
 }
 
@@ -741,39 +741,22 @@ label {
     margin-right: 10px;
 } 
 
-/***marseille-and-populaires ***/
+/***marseille-and-populaires***/
 
 .marseille-and-populaires {
     flex-direction: column-reverse;
     width: 100%;
 }
 
-.marseille {
-    width: 100%;
-    margin-right: 0;
-    background-color: white;
-}
-
-.marseille-cards {
-    flex-direction: column;
-}
-
-.marseille-card {
-    width: 75%;
-}
-
-.midlle-marseille-card {
-    margin: 0;
-}
-
-.marseille-card img {
-    width: 100%;
-}
+/***populaires***/
 
 .populaires {
     width: 100%;
     border-radius: 0;
     padding: 30px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .populaires-title {
@@ -786,6 +769,8 @@ label {
 
 .populaires-cards {
     flex-direction: column;
+    width: 100%;
+    align-items: center;
 }
 
 .populaires-cards .card {
@@ -797,12 +782,50 @@ label {
     padding-top: 15px;
 }
 
+/***marseille***/
+
+.marseille {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 0;
+    background-color: white;
+}
+
+.marseille-title {
+    width: 75%;
+}
+
+.marseille-cards {
+    flex-direction: column;
+    width: 75%;
+}
+
+.marseille-card {
+    width: 100%;
+}
+
+.middle-marseille-card {
+    margin: 0;
+}
+
+.marseille-card img {
+    width: 100%;
+}
+
+/***activities***/
+
 .activities {
     margin: 0;
 }
 
 .activities-cards {
     flex-direction: column;
+}
+
+.marseille-foot {
+    width: 75%;
 }
 
 .activities-card {
@@ -826,6 +849,8 @@ label {
 .pomegues {
     margin-top: 15px;
 }
+
+/***footer***/
 
 .footers-text {
     margin: 0;
